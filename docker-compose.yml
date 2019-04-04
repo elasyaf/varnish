@@ -1,0 +1,10 @@
+version: "2.0"
+services:
+  varnish:
+    image: 'icubeus/varnish:latest'
+    hostname: varnish
+    tty: true
+    privileged: true
+    ports:
+      - "80:80"
+      - "6082:6082"
